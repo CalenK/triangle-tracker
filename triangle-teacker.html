@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Triangle tracker</title>
+</head>
+<body>
+  <h1>Triangle tracker</h1>
+
+  <form>
+    <label for="side1">side 1</label>
+    <input id="side1" name="side1" type="number">
+    <label for="side2">side 2</label>
+    <input id="side2" name="side2" type="number">
+    <label for="side3">side 3</label>
+    <input id="side3" name="side3" type="number">
+    <button type="submit">check</button>
+  </form>
+  <br />
+  <button type="button" class="hidden" id="reset">reset</button>
+
+  <div id="equal" class="hidden">
+    <h1>Equilateral</h1>
+    <p>All sides of the triangle are equal.</p>
+  </div>
+
+  <div id="slope" class="hidden">
+    <h1>Isosceles</h1>
+    <p>Two sides of the triangle are equal.</p>
+  </div>
+
+  <div id="not-equal" class="hidden">
+    <h1>Scalene</h1>
+    <p>No sides of the triangle are equal.</p>
+  </div>
+
+  <div id="not-triangle" class="hidden">
+    <h1>Not a triangle</h1>
+    <p>The length of the sides of a triangle has to be less than or equal to the length of the third side.</p>
+  </div>
+</body>  
+</html>
